@@ -1,0 +1,331 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/VetOrganization",
+  "name": "VetOrganization",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier.use",
+        "path": "Organization.identifier.use",
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier.type",
+        "path": "Organization.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier.type.coding",
+        "path": "Organization.identifier.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier.type.coding.system",
+        "path": "Organization.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "Organization.identifier.type.coding.version",
+        "path": "Organization.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier.type.coding.code",
+        "path": "Organization.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "TAX"
+      },
+      {
+        "id": "Organization.identifier.type.coding.display",
+        "path": "Organization.identifier.type.coding.display",
+        "min": 1,
+        "fixedString": "Tax ID number"
+      },
+      {
+        "id": "Organization.identifier.type.coding.userSelected",
+        "path": "Organization.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier.type.text",
+        "path": "Organization.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier.system",
+        "path": "Organization.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier.value",
+        "path": "Organization.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier.assigner",
+        "path": "Organization.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Organization.active",
+        "path": "Organization.active",
+        "min": 1
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.type.coding",
+        "path": "Organization.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.type.coding.system",
+        "path": "Organization.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/organization-type"
+      },
+      {
+        "id": "Organization.type.coding.version",
+        "path": "Organization.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Organization.type.coding.code",
+        "path": "Organization.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Organization.type.coding.display",
+        "path": "Organization.type.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Organization.type.coding.userSelected",
+        "path": "Organization.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Organization.type.text",
+        "path": "Organization.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "min": 1
+      },
+      {
+        "id": "Organization.alias",
+        "path": "Organization.alias",
+        "max": "0"
+      },
+      {
+        "id": "Organization.telecom",
+        "path": "Organization.telecom",
+        "min": 1
+      },
+      {
+        "id": "Organization.telecom.system",
+        "path": "Organization.telecom.system",
+        "min": 1
+      },
+      {
+        "id": "Organization.telecom.value",
+        "path": "Organization.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.telecom.use",
+        "path": "Organization.telecom.use",
+        "min": 1
+      },
+      {
+        "id": "Organization.telecom.rank",
+        "path": "Organization.telecom.rank",
+        "max": "0"
+      },
+      {
+        "id": "Organization.telecom.period",
+        "path": "Organization.telecom.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.address.use",
+        "path": "Organization.address.use",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.type",
+        "path": "Organization.address.type",
+        "max": "0"
+      },
+      {
+        "id": "Organization.address.text",
+        "path": "Organization.address.text",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.line",
+        "path": "Organization.address.line",
+        "max": "0"
+      },
+      {
+        "id": "Organization.address.city",
+        "path": "Organization.address.city",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.district",
+        "path": "Organization.address.district",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.state",
+        "path": "Organization.address.state",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.postalCode",
+        "path": "Organization.address.postalCode",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.country",
+        "path": "Organization.address.country",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.period",
+        "path": "Organization.address.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact",
+        "path": "Organization.contact",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.contact.purpose",
+        "path": "Organization.contact.purpose",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.name",
+        "path": "Organization.contact.name",
+        "min": 1
+      },
+      {
+        "id": "Organization.contact.name.use",
+        "path": "Organization.contact.name.use",
+        "min": 1
+      },
+      {
+        "id": "Organization.contact.name.text",
+        "path": "Organization.contact.name.text",
+        "min": 1
+      },
+      {
+        "id": "Organization.contact.name.family",
+        "path": "Organization.contact.name.family",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.name.given",
+        "path": "Organization.contact.name.given",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.name.prefix",
+        "path": "Organization.contact.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.name.suffix",
+        "path": "Organization.contact.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.name.period",
+        "path": "Organization.contact.name.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.telecom",
+        "path": "Organization.contact.telecom",
+        "min": 1
+      },
+      {
+        "id": "Organization.contact.telecom.system",
+        "path": "Organization.contact.telecom.system",
+        "min": 1
+      },
+      {
+        "id": "Organization.contact.telecom.value",
+        "path": "Organization.contact.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.contact.telecom.use",
+        "path": "Organization.contact.telecom.use",
+        "min": 1
+      },
+      {
+        "id": "Organization.contact.telecom.rank",
+        "path": "Organization.contact.telecom.rank",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.telecom.period",
+        "path": "Organization.contact.telecom.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contact.address",
+        "path": "Organization.contact.address",
+        "max": "0"
+      },
+      {
+        "id": "Organization.endpoint",
+        "path": "Organization.endpoint",
+        "max": "0"
+      }
+    ]
+  }
+}

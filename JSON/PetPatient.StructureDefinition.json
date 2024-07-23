@@ -1,0 +1,470 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PetPatient",
+  "name": "PetPatient",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension:animal",
+        "path": "Patient.extension",
+        "sliceName": "animal",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-animal"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:animal.extension",
+        "path": "Patient.extension.extension",
+        "min": 3
+      },
+      {
+        "id": "Patient.extension:animal.extension:species",
+        "path": "Patient.extension.extension",
+        "sliceName": "species",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://terminology.explample.com/ValueSet/especies-vs"
+        }
+      },
+      {
+        "id": "Patient.extension:animal.extension:breed",
+        "path": "Patient.extension.extension",
+        "sliceName": "breed",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://terminology.explample.com/ValueSet/razas-vs"
+        }
+      },
+      {
+        "id": "Patient.extension:animal.extension:genderStatus",
+        "path": "Patient.extension.extension",
+        "sliceName": "genderStatus",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://terminology.explample.com/ValueSet/gender-status-vs"
+        }
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "type.coding.code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber",
+        "path": "Patient.identifier",
+        "sliceName": "MedicalRecordNumber",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.use",
+        "path": "Patient.identifier.use",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type",
+        "path": "Patient.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type.coding",
+        "path": "Patient.identifier.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type.coding.system",
+        "path": "Patient.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type.coding.version",
+        "path": "Patient.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type.coding.code",
+        "path": "Patient.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "MR"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type.coding.display",
+        "path": "Patient.identifier.type.coding.display",
+        "min": 1,
+        "fixedString": "Medical record number"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type.coding.userSelected",
+        "path": "Patient.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.type.text",
+        "path": "Patient.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://MyVet.example.com/animal-ehr/"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.period",
+        "path": "Patient.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MedicalRecordNumber.assigner",
+        "path": "Patient.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber",
+        "path": "Patient.identifier",
+        "sliceName": "MicrochipNumber"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.use",
+        "path": "Patient.identifier.use",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type",
+        "path": "Patient.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type.coding",
+        "path": "Patient.identifier.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type.coding.system",
+        "path": "Patient.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type.coding.version",
+        "path": "Patient.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type.coding.code",
+        "path": "Patient.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "MCN"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type.coding.display",
+        "path": "Patient.identifier.type.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type.coding.userSelected",
+        "path": "Patient.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.type.text",
+        "path": "Patient.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://MyPet.example.com/animal-id/"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.period",
+        "path": "Patient.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.identifier:MicrochipNumber.assigner",
+        "path": "Patient.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "min": 1
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.name.use",
+        "path": "Patient.name.use",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.text",
+        "path": "Patient.name.text",
+        "min": 1
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.prefix",
+        "path": "Patient.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.suffix",
+        "path": "Patient.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.name.period",
+        "path": "Patient.name.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "max": "0"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "min": 1
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "max": "0"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Patient.multipleBirth[x]",
+        "path": "Patient.multipleBirth[x]",
+        "max": "0"
+      },
+      {
+        "id": "Patient.photo",
+        "path": "Patient.photo",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.contact.name",
+        "path": "Patient.contact.name",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.name.text",
+        "path": "Patient.contact.name.text",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.name.family",
+        "path": "Patient.contact.name.family",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.name.given",
+        "path": "Patient.contact.name.given",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.contact.name.prefix",
+        "path": "Patient.contact.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.name.suffix",
+        "path": "Patient.contact.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.name.period",
+        "path": "Patient.contact.name.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.telecom",
+        "path": "Patient.contact.telecom",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.telecom.system",
+        "path": "Patient.contact.telecom.system",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.telecom.value",
+        "path": "Patient.contact.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.telecom.rank",
+        "path": "Patient.contact.telecom.rank",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.telecom.period",
+        "path": "Patient.contact.telecom.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.address",
+        "path": "Patient.contact.address",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.gender",
+        "path": "Patient.contact.gender",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.organization",
+        "path": "Patient.contact.organization",
+        "max": "0"
+      },
+      {
+        "id": "Patient.contact.period",
+        "path": "Patient.contact.period",
+        "max": "0"
+      },
+      {
+        "id": "Patient.communication",
+        "path": "Patient.communication",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.reference",
+        "path": "Patient.generalPractitioner.reference",
+        "min": 1
+      },
+      {
+        "id": "Patient.generalPractitioner.type",
+        "path": "Patient.generalPractitioner.type",
+        "min": 1,
+        "fixedUri": "Practitioner"
+      },
+      {
+        "id": "Patient.generalPractitioner.identifier",
+        "path": "Patient.generalPractitioner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Patient.generalPractitioner.display",
+        "path": "Patient.generalPractitioner.display",
+        "max": "0"
+      },
+      {
+        "id": "Patient.managingOrganization.reference",
+        "path": "Patient.managingOrganization.reference",
+        "min": 1
+      },
+      {
+        "id": "Patient.managingOrganization.type",
+        "path": "Patient.managingOrganization.type",
+        "min": 1,
+        "fixedUri": "Organization"
+      },
+      {
+        "id": "Patient.managingOrganization.identifier",
+        "path": "Patient.managingOrganization.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Patient.managingOrganization.display",
+        "path": "Patient.managingOrganization.display",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link",
+        "path": "Patient.link",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.link.other.reference",
+        "path": "Patient.link.other.reference",
+        "min": 1
+      },
+      {
+        "id": "Patient.link.other.type",
+        "path": "Patient.link.other.type",
+        "min": 1,
+        "fixedUri": "RelatedPerson"
+      },
+      {
+        "id": "Patient.link.other.identifier",
+        "path": "Patient.link.other.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Patient.link.other.display",
+        "path": "Patient.link.other.display",
+        "max": "0"
+      }
+    ]
+  }
+}

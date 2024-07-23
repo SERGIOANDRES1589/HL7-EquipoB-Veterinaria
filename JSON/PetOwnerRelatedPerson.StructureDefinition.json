@@ -1,0 +1,295 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/PetOwnerRelatedPerson",
+  "name": "PetOwnerRelatedPerson",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson.identifier",
+        "path": "RelatedPerson.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.identifier.use",
+        "path": "RelatedPerson.identifier.use",
+        "min": 1,
+        "fixedCode": "official"
+      },
+      {
+        "id": "RelatedPerson.identifier.type",
+        "path": "RelatedPerson.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding",
+        "path": "RelatedPerson.identifier.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.system",
+        "path": "RelatedPerson.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.version",
+        "path": "RelatedPerson.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.code",
+        "path": "RelatedPerson.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "PN"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.display",
+        "path": "RelatedPerson.identifier.type.coding.display",
+        "min": 1,
+        "fixedString": "Person number"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.userSelected",
+        "path": "RelatedPerson.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.system",
+        "path": "RelatedPerson.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.value",
+        "path": "RelatedPerson.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.identifier.period",
+        "path": "RelatedPerson.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.assigner",
+        "path": "RelatedPerson.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.active",
+        "path": "RelatedPerson.active",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.patient.reference",
+        "path": "RelatedPerson.patient.reference",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.patient.type",
+        "path": "RelatedPerson.patient.type",
+        "min": 1,
+        "fixedUri": "Patient"
+      },
+      {
+        "id": "RelatedPerson.patient.identifier",
+        "path": "RelatedPerson.patient.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.patient.display",
+        "path": "RelatedPerson.patient.display",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding",
+        "path": "RelatedPerson.relationship.coding",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.system",
+        "path": "RelatedPerson.relationship.coding.system",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.version",
+        "path": "RelatedPerson.relationship.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.code",
+        "path": "RelatedPerson.relationship.coding.code",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.display",
+        "path": "RelatedPerson.relationship.coding.display",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.userSelected",
+        "path": "RelatedPerson.relationship.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name",
+        "path": "RelatedPerson.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.name.use",
+        "path": "RelatedPerson.name.use",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.text",
+        "path": "RelatedPerson.name.text",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.family",
+        "path": "RelatedPerson.name.family",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.name.given",
+        "path": "RelatedPerson.name.given",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.name.prefix",
+        "path": "RelatedPerson.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.suffix",
+        "path": "RelatedPerson.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.period",
+        "path": "RelatedPerson.name.period",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.telecom",
+        "path": "RelatedPerson.telecom",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.telecom.system",
+        "path": "RelatedPerson.telecom.system",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.telecom.value",
+        "path": "RelatedPerson.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.telecom.rank",
+        "path": "RelatedPerson.telecom.rank",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.telecom.period",
+        "path": "RelatedPerson.telecom.period",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.gender",
+        "path": "RelatedPerson.gender",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.birthDate",
+        "path": "RelatedPerson.birthDate",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address",
+        "path": "RelatedPerson.address",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.address.use",
+        "path": "RelatedPerson.address.use",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.address.type",
+        "path": "RelatedPerson.address.type",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address.text",
+        "path": "RelatedPerson.address.text",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.address.line",
+        "path": "RelatedPerson.address.line",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address.city",
+        "path": "RelatedPerson.address.city",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.address.district",
+        "path": "RelatedPerson.address.district",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address.state",
+        "path": "RelatedPerson.address.state",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.address.postalCode",
+        "path": "RelatedPerson.address.postalCode",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.address.country",
+        "path": "RelatedPerson.address.country",
+        "min": 1
+      },
+      {
+        "id": "RelatedPerson.address.period",
+        "path": "RelatedPerson.address.period",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.photo",
+        "path": "RelatedPerson.photo",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.period",
+        "path": "RelatedPerson.period",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.communication",
+        "path": "RelatedPerson.communication",
+        "max": "0"
+      }
+    ]
+  }
+}

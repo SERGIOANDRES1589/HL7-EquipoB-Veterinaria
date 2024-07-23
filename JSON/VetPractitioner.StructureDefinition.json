@@ -1,0 +1,317 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/VetPractitioner",
+  "name": "VetPractitioner",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.use",
+        "path": "Practitioner.identifier.use",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.type",
+        "path": "Practitioner.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.type.coding",
+        "path": "Practitioner.identifier.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.system",
+        "path": "Practitioner.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.version",
+        "path": "Practitioner.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.code",
+        "path": "Practitioner.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "PN"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.display",
+        "path": "Practitioner.identifier.type.coding.display",
+        "min": 1,
+        "fixedString": "Person number"
+      },
+      {
+        "id": "Practitioner.identifier.type.coding.userSelected",
+        "path": "Practitioner.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.type.text",
+        "path": "Practitioner.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.period",
+        "path": "Practitioner.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.name.use",
+        "path": "Practitioner.name.use",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name.prefix",
+        "path": "Practitioner.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.name.suffix",
+        "path": "Practitioner.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.name.period",
+        "path": "Practitioner.name.period",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.telecom.system",
+        "path": "Practitioner.telecom.system",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.telecom.value",
+        "path": "Practitioner.telecom.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.telecom.rank",
+        "path": "Practitioner.telecom.rank",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.telecom.period",
+        "path": "Practitioner.telecom.period",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.photo",
+        "path": "Practitioner.photo",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.identifier",
+        "path": "Practitioner.qualification.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.use",
+        "path": "Practitioner.qualification.identifier.use",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type",
+        "path": "Practitioner.qualification.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type.coding",
+        "path": "Practitioner.qualification.identifier.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type.coding.system",
+        "path": "Practitioner.qualification.identifier.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type.coding.version",
+        "path": "Practitioner.qualification.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type.coding.code",
+        "path": "Practitioner.qualification.identifier.type.coding.code",
+        "min": 1,
+        "fixedCode": "LN"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type.coding.display",
+        "path": "Practitioner.qualification.identifier.type.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type.coding.userSelected",
+        "path": "Practitioner.qualification.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.type.text",
+        "path": "Practitioner.qualification.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.system",
+        "path": "Practitioner.qualification.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.value",
+        "path": "Practitioner.qualification.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.identifier.period",
+        "path": "Practitioner.qualification.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.identifier.assigner",
+        "path": "Practitioner.qualification.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.code.coding",
+        "path": "Practitioner.qualification.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.system",
+        "path": "Practitioner.qualification.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.version",
+        "path": "Practitioner.qualification.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.code",
+        "path": "Practitioner.qualification.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.display",
+        "path": "Practitioner.qualification.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.userSelected",
+        "path": "Practitioner.qualification.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.code.text",
+        "path": "Practitioner.qualification.code.text",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.period",
+        "path": "Practitioner.qualification.period",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.period.start",
+        "path": "Practitioner.qualification.period.start",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.period.end",
+        "path": "Practitioner.qualification.period.end",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.qualification.issuer",
+        "path": "Practitioner.qualification.issuer",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "max": "0"
+      }
+    ]
+  }
+}
