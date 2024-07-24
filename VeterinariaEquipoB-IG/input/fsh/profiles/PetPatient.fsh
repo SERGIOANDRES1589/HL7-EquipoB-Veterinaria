@@ -1,6 +1,6 @@
-Alias: $especies-vs = https://terminology.explample.com/ValueSet/especies-vs
-Alias: $razas-vs = https://terminology.explample.com/ValueSet/razas-vs
-Alias: $gender-status-vs = https://terminology.explample.com/ValueSet/gender-status-vs
+Alias: $especies-vs =  http://veterinaria-equipo-b.org/ValueSet/especies-vs
+Alias: $razas-vs =  http://veterinaria-equipo-b.org/ValueSet/razas-vs
+Alias: $gender-status-vs =  http://veterinaria-equipo-b.org/ValueSet/gender-status-vs
 
 Profile: PetPatient
 Parent: Patient

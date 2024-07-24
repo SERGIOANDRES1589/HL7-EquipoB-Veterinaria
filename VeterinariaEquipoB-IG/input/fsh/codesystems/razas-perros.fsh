@@ -7,7 +7,7 @@ Description: "Códigos para las diferentes razas de perros definidas por la fede
 * ^status = #active
 * ^experimental = true
 * ^purpose = "This FHIR resource type CodeSystem has been created for educational purposes."
-* ^count = 48
+* ^count = 46
 *    #PA  "Pastor Alemán"
 *    #PB  "Pastor Belga"
 *    #CO  "Collie"
@@ -55,4 +55,4 @@ Description: "Códigos para las diferentes razas de perros definidas por la fede
 *    #WH  "Whippet"
 *    #GE  "Galgo Español"
 *    #BOZ "Borzoi"
-*    #SA  "Saluki"
+*    #SAL  "Saluki"

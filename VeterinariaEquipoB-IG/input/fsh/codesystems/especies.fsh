@@ -7,8 +7,8 @@ Description: "Códigos para describir las diferentes especies"
 * ^status = #active
 * ^experimental = true
 * ^purpose = "This FHIR resource type CodeSystem has been created for educational purposes."
-* ^count = 6
+* ^count = 4
 *   #448771007 "Canis lupus familiaris"  "perro"
-*   #448771007 "Felis catus"    "gato"
+*   #448169003 "Felis catus"    "gato"
 *   #410601005 "Aves"   "Aves"
 *   #410610008 "Reptilia"   "Reptiles"
