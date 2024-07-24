@@ -56,7 +56,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://terminology.explample.com/ValueSet/gender-status-vs"
+          "valueSet": "https://terminology.explample.com/ValueSet/GenderStatusVs"
         }
       },
       {
