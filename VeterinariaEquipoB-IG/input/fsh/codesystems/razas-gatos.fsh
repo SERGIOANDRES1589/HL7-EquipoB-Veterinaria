@@ -1,8 +1,8 @@
-CodeSystem: razas-gatos
-Id: razas-gatos
+CodeSystem: RazasGatos
+Id: RazasGatos
 Title: "CodeSystem razas gatos"
 Description: "Códigos para las diferentes razas de gatos definidas por la federación internacional felina"
-* ^url = $razas-gatos
+* ^url = $RazasGatos
 * ^version = "4.0.1"
 * ^status = #active
 * ^experimental = true

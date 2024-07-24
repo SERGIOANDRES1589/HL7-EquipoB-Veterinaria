@@ -1,7 +1,7 @@
 Alias: $designation-usage = http://terminology.hl7.org/CodeSystem/designation-usage
 
-CodeSystem: v2.0131
-Id: v2-0131
+CodeSystem: Version2
+Id: Version2
 Title: "v2 Contact Role"
 Description: "FHIR Value set/code system definition for HL7 v2 table 0131 ( Contact Role)"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
@@ -32,7 +32,7 @@ Description: "FHIR Value set/code system definition for HL7 v2 table 0131 ( Cont
 * ^property[+].code = #deprecationDate
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
 * ^property[=].description = "The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged"
-* ^property[=].type = #dateTime.
+* ^property[=].type = #dateTime
 * #OWN "Owner" "Pet owner (applies to animal patient)"
 * #RSP "Owner" "Responsible for the pet (applies to animal patient)"
 * #BP "Billing contact person"

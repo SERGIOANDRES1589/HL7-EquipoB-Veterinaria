@@ -1,8 +1,8 @@
-CodeSystem: especies
-Id: especies
+CodeSystem: Especies
+Id: Especies
 Title: "CodeSystem especies"
 Description: "Códigos para describir las diferentes especies"
-* ^url = $especies
+* ^url = $Especies
 * ^version = "4.0.1"
 * ^status = #active
 * ^experimental = true

@@ -1,5 +1,5 @@
-ValueSet: v2.0131
-Id: v2-0131
+ValueSet: Version2
+Id: Version2
 Title: "v2 Contact Role"
 Description: "FHIR Value set/code system definition for HL7 v2 table 0131 ( Contact Role)"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

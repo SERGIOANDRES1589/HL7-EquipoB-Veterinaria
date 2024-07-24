@@ -1,8 +1,8 @@
-CodeSystem: razas-aves
-Id: razas-aves
+CodeSystem: RazasAves
+Id: RazasAves
 Title: "CodeSystem razas aves"
 Description: "Códigos para las diferentes razas de aves"
-* ^url = $razas-aves
+* ^url = $RazasAves
 * ^version = "4.0.1"
 * ^status = #active
 * ^experimental = true

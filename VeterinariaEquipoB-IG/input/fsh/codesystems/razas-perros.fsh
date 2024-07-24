@@ -1,13 +1,13 @@
-CodeSystem: razas-perros
-Id: razas-perros
+CodeSystem: RazasPerros
+Id: RazasPerros
 Title: "CodeSystem razas perros"
 Description: "Códigos para las diferentes razas de perros definidas por la federación internacional canina"
-* ^url = $razas-perros
+* ^url = $RazasPerros
 * ^version = "4.0.1"
 * ^status = #active
 * ^experimental = true
 * ^purpose = "This FHIR resource type CodeSystem has been created for educational purposes."
-* ^count = 46
+* ^count = 48
 *    #PA  "Pastor Alemán"
 *    #PB  "Pastor Belga"
 *    #CO  "Collie"

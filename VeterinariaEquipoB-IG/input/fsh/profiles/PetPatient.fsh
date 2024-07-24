@@ -1,6 +1,6 @@
-Alias: $especies-vs =  http://veterinaria-equipo-b.org/ValueSet/especies-vs
-Alias: $razas-vs =  http://veterinaria-equipo-b.org/ValueSet/razas-vs
-Alias: $gender-status-vs =  http://veterinaria-equipo-b.org/ValueSet/gender-status-vs
+Alias: $EspeciesVs =  http://veterinaria-equipo-b.org/ValueSet/EspeciesVs
+Alias: $RazasVs =  http://veterinaria-equipo-b.org/ValueSet/RazasVs
+Alias: $GenderStatusVs =  http://veterinaria-equipo-b.org/ValueSet/GenderStatusVs
 
 Profile: PetPatient
 Parent: Patient
@@ -10,11 +10,11 @@ Id: PetPatient
 * extension contains PatAnimal named animal 0..*
 * extension[animal] ^isModifier = false
 * extension[animal].extension 3..
-* extension[animal].extension[species] from $especies-vs (required)
+* extension[animal].extension[species].valueCodeableConcept from $EspeciesVs (required)
 * extension[animal].extension[species] ^sliceName = "species"
-* extension[animal].extension[breed] from $razas-vs (required)
+* extension[animal].extension[breed].valueCodeableConcept from $RazasVs (required)
 * extension[animal].extension[breed] ^sliceName = "breed"
-* extension[animal].extension[genderStatus] from $gender-status-vs (required)
+* extension[animal].extension[genderStatus].valueCodeableConcept from $GenderStatusVs (required)
 * extension[animal].extension[genderStatus] ^sliceName = "genderStatus"
 * identifier ^slicing.discriminator.type = #type
 * identifier ^slicing.discriminator.path = "type.coding.code"

@@ -1,8 +1,8 @@
-CodeSystem: razas-reptiles
-Id: razas-reptiles
+CodeSystem: RazasReptiles
+Id: RazasReptiles
 Title: "CodeSystem razas reptiles"
 Description: "Códigos para las diferentes razas de reptiles"
-* ^url = $razas-reptiles
+* ^url = $RazasReptiles
 * ^version = "4.0.1"
 * ^status = #active
 * ^experimental = true

@@ -1,8 +1,8 @@
-CodeSystem: gender-status
-Id: gender-status
+CodeSystem: GenderStatus
+Id: GenderStatus
 Title: "CodeSystem estado de genero"
 Description: "Códigos para describir el estado de genero del paciente (si se ha esterilizado previamente o no)"
-* ^url = $gender-status
+* ^url = $GenderStatus
 * ^version = "4.0.1"
 * ^status = #active
 * ^experimental = true
