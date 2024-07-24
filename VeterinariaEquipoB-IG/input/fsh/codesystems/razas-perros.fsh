@@ -39,7 +39,7 @@ Description: "Códigos para las diferentes razas de perros definidas por la fede
 *    #PE  "Pointer Inglés"
 *    #SI  "Setter Irlandés"
 *    #BG  "Braco Alemán de pelo corto"
-*    #BH  "Braco Húngaro (Vizsla)"
+*    #BHV  "Braco Húngaro (Vizsla)"
 *    #WE  "Weimaraner"
 *    #LR  "Labrador Retriever"
 *    #GR  "Golden Retriever"
