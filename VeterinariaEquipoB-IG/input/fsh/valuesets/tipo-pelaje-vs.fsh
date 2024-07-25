@@ -1,7 +1,7 @@
 ValueSet: TipoPelajeVs
 Id: TipoPelajeVs
 Title: "Tipo de pelaje Value Set"
-Description: "ValuSet para el tipo de pelajes"
+Description: "ValueSet para el tipo de pelajes"
 * ^url = $TipoPelajeVs
 * ^version = "4.0.1"
 * ^status = #active

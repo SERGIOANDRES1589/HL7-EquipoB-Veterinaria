@@ -1,7 +1,7 @@
 ValueSet: OrigenVs
 Id: OrigenVs
 Title: "Origen Value Set"
-Description: "ValuSet para el Origen"
+Description: "ValueSet para el Origen"
 * ^url = $OrigenVs
 * ^version = "4.0.1"
 * ^status = #active

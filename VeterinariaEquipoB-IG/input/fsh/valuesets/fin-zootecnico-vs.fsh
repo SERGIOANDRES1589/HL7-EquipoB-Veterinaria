@@ -1,7 +1,7 @@
 ValueSet: FinZootecnicoVs
 Id: FinZootecnicoVs
 Title: "Fin zootecnico Value Set"
-Description: "ValuSet para el fin zootecnico"
+Description: "ValueSet para el fin zootecnico"
 * ^url = $FinZootecnicoVs
 * ^version = "4.0.1"
 * ^status = #active

@@ -1,7 +1,7 @@
 ValueSet: RazasVs
 Id: RazasVs
 Title: "Razas Value Set"
-Description: "Codes of the members of the Punk Rock band Ramones"
+Description: "ValueSet para las razas"
 * ^url = $RazasVs
 * ^version = "4.0.1"
 * ^status = #active

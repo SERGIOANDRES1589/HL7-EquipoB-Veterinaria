@@ -1,7 +1,7 @@
 ValueSet: EspeciesVs
 Id: EspeciesVs
 Title: "Especies Value Set"
-Description: "ValuSet para las especies"
+Description: "ValueSet para las especies"
 * ^url = $EspeciesVs
 * ^version = "4.0.1"
 * ^status = #active
