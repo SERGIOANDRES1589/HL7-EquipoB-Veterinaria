@@ -1,0 +1,26 @@
+{
+    "id":"d1d777dd-8bd8-444b-b9e2-82ef73ae3f73",
+    "resourceType": "Observation",
+    "status": "final",
+    "code":
+    {
+        "coding": [
+            {
+                "code": "29463-7",
+                "display": "Peso corporal",
+                "system": "http://loinc.org"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/78a24bfb-6796-4fae-9103-ca401cd6629d"
+    },
+    "effective": "2024-07-23",
+    "performer": {
+        "reference": "Practitioner/7571c9e6-cdc8-4024-85cc-6f18fe7b05b7"
+    },
+    "value": {
+        "value": 1800,
+        "unit": "gr"
+    }
+}

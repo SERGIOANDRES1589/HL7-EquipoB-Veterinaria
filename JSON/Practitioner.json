@@ -1,0 +1,70 @@
+{
+    "resourceType": "Practitioner",
+    "id": "7571c9e6-cdc8-4024-85cc-6f18fe7b05b7",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "<http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PN",
+                        "display": "Person number"
+                    }
+                ]
+            },
+            "value": "0001111000"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "use": "official",
+            "family": "Restrepo",
+            "given": [
+                "Carlos",
+                "Andres"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+57(300)658-4455"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1980-05-01",
+    "qualification": [
+        {
+            "identifier": [
+                {
+                    "use": "official",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "<http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "LN",
+                                "display": "License number"
+                            }
+                        ]
+                    },
+                    "value": "AB0123456"
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "<http://snomed.info/sct",
+                        "code": "106290006",
+                        "display": "Veterinarian (occupation)"
+                    }
+                ],
+                "text": "Veterinario"
+            },
+            "period": {
+                "start": "2003-01-12"
+            }
+        }
+    ]
+}

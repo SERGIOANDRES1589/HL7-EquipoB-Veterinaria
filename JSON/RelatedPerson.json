@@ -1,0 +1,58 @@
+{
+    "resourceType": "RelatedPerson",
+    "id": "0ef63f41-7e7d-4896-a7b3-2ddfd25f42c3",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "<http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PN",
+                        "display": "Person number"
+                    }
+                ]
+            },
+            "value": "1152477764"
+        }
+    ],
+    "active": true,
+    "patient": {
+        "reference": "Patient/78a24bfb-6796-4fae-9103-ca401cd6629d",
+        "type": "Patient"
+    },
+    "relationship": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "224150009",
+                    "display": "Pet ownership (observable entity)"
+                }
+            ]
+        }
+    ],
+    "name": [
+        {
+            "family": "Moreno",
+            "given": ["Carolina"]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "+57(314)8985675",
+            "use": "mobile"
+        }
+    ],
+    "address": [
+        {
+            "use": "home",
+            "text": "Cll 24 # 78 408",
+            "city": "Medellín",
+            "state": "Antioquía",
+            "postalCode": "050021",
+            "country": "CO"
+        }
+    ]
+}
