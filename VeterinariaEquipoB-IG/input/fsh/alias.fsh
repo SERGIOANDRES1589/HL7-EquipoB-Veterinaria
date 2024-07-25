@@ -13,3 +13,6 @@ Alias: $EspeciesVs = http://veterinaria-equipo-b.org/ValueSet/EspeciesVs
 Alias: $TipoPelajeVs = http://veterinaria-equipo-b.org/ValueSet/TipoPelajeVs
 Alias: $FinZootecnicoVs = http://veterinaria-equipo-b.org/ValueSet/FinZootecnicoVs
 Alias: $OrigenVs = http://veterinaria-equipo-b.org/ValueSet/OrigenVs
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
+Alias: $sct = http://snomed.info/sct
+Alias: $loinc = http://loinc.org

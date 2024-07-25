@@ -2,10 +2,10 @@ Instance: 0b8e88e3-9456-4cf0-8283-127ff72053b6
 InstanceOf: Organization
 Usage: #example
 * identifier.use = #official
-* identifier.type = <http://terminology.hl7.org/CodeSystem/v2-0203#TAX "Tax ID number"
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#TAX "Tax ID number"
 * identifier.value = "11111222221111"
 * active = true
-* type = <http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
+* type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
 * name = "Veterinaria Equipo B"
 * telecom.system = #phone
 * telecom.value = "+57(604)238-5680"

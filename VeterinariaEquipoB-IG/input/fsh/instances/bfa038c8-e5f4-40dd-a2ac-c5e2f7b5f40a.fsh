@@ -7,7 +7,7 @@ Usage: #example
 * identifier.value = "001"
 * status = #final
 * type = $loinc#18842-5 "Discharge summary"
-* category = <http://loinc.org#11503-0 "Medical records"
+* category = http://loinc.org#11503-0 "Medical records"
 * subject = Reference(Patient/78a24bfb-6796-4fae-9103-ca401cd6629d)
 * subject.type = "Patient"
 * date = "2024-07-23T07:30:15-05:00"

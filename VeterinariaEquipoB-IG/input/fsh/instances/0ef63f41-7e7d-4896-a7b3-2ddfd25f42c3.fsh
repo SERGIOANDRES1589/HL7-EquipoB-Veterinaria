@@ -4,7 +4,7 @@ Instance: 0ef63f41-7e7d-4896-a7b3-2ddfd25f42c3
 InstanceOf: RelatedPerson
 Usage: #example
 * identifier.use = #official
-* identifier.type = <http://terminology.hl7.org/CodeSystem/v2-0203#PN "Person number"
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PN "Person number"
 * identifier.value = "1152477764"
 * active = true
 * patient = Reference(Patient/78a24bfb-6796-4fae-9103-ca401cd6629d)
