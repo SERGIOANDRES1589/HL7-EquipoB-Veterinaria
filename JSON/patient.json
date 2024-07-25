@@ -1,0 +1,115 @@
+{
+    "resourceType": "Patient",
+    "id": "78a24bfb-6796-4fae-9103-ca401cd6629d",
+    "extension": [
+        {
+            "url": "http://veterinaria-equipo-b.org/StructureDefinition/species",
+            "value": {
+                "coding": [
+                    {
+                        "system": "http://veterinaria-equipo-b.org/CodeSystem/Especies",
+                        "code": "448771007",
+                        "display": "Canis lupus familiaris"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://veterinaria-equipo-b.org/StructureDefinition/breed",
+            "value": {
+                "coding": [
+                    {
+                        "system": "http://veterinaria-equipo-b.org/ValueSet/EspeciesVs",
+                        "code": "LR",
+                        "display": "Labrador Retriever"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://veterinaria-equipo-b.org/StructureDefinition/genderStatus",
+            "value": {
+                "coding": [
+                    {
+                        "system": "http://veterinaria-equipo-b.org/ValueSet/GenderStatusVs",
+                        "code": "neutered",
+                        "display": "Neutered"
+                    }
+                ]
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MR",
+                        "display": "Medical record number"
+                    }
+                ]
+            },
+            "system": "http://MyVet.example.com/animal-ehr/",
+            "value": "A00000001"
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "MCN",
+                        "display": "Microchip Number"
+                    }
+                ]
+            },
+            "system": "http://MyPet.example.com/animal-id/",
+            "value": "000001234567"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "text": "Guadalupe"
+        }
+    ],
+    "gender": "female",
+    "birthDate": "2018-12-15",
+    "contact": [
+        {
+            "relationship": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "224150009",
+                            "display": "Pet ownership (observable entity)"
+                        }
+                    ]
+                }
+            ],
+            "name": [
+                {
+                    "family": "Moreno",
+                    "given": ["Carolina"]
+                }
+            ],
+            "telecom": [
+                {
+                    "system": "phone",
+                    "value": "+57(314)8985675",
+                    "use": "mobile"
+                }
+            ]
+        }
+    ],
+    "link": [
+        {
+            "other": {
+                "reference": "RelatedPerson/0ef63f41-7e7d-4896-a7b3-2ddfd25f42c3",
+                "type": "RelatedPerson"
+            },
+            "type": "refer"
+        }
+    ]
+}
